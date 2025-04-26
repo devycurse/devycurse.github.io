@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+</head>
+<body>
+<header>
+    <h1 align="center">main page</h1>
+    <hr>
+</header>
+<section align="center">
+    <button onclick="goToRomePizzaPage()">римские пиццы</button>
+</section>
+<section align="center">
+    <button onclick="goToPizzaPage()">пиццы</button>
+</section>
+<script>
+    function goToRomePizzaPage() {
+        window.location.href = "romePizza.html";
+    }
+
+    function goToPizzaPage() {
+        window.location.href = "pizza.html";
+    }
+</script>
+</body>
+</html>
