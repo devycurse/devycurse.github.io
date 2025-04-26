@@ -2,15 +2,15 @@ let dishes = [];
 let remainingDishes = [];
 let errorsCount = 0;
 
-async function loadRomePizza() {
-    const response = await fetch('data/romePizza.json'); // <-- твой файл
+async function loadPizza() {
+    const response = await fetch('data/pizza.json');
     dishes = await response.json();
     remainingDishes = [...dishes];
     startQuiz();
 }
 
 function startQuiz() {
-    const menuSection = document.getElementById('romePizza');
+    const menuSection = document.getElementById('pizza');
     menuSection.innerHTML = '';
 
     if (remainingDishes.length === 0) {
@@ -58,7 +58,7 @@ function startQuiz() {
 }
 
 function showResults() {
-    const menuSection = document.getElementById('romePizza');
+    const menuSection = document.getElementById('pizza');
     menuSection.innerHTML = '';
 
     const resultText = document.createElement('p');
@@ -78,4 +78,4 @@ function shuffleArray(array) {
     return array.sort(() => Math.random() - 0.5);
 }
 
-window.onload = loadRomePizza;
+window.onload = loadPizza;

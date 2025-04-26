@@ -2,21 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-    <h1 align="center">main page</h1>
-    <hr>
-</header>
-<section align="center">
-    <button onclick="goToRomePizzaPage()">римские пиццы</button>
+<section class="buttons-container">
+    <button class="btn" onclick="goToRomePizzaPage()">Римские пиццы</button>
+    <button class="btn" onclick="goToPizzaPage()">Пиццы</button>
 </section>
-<section align="center">
-    <button onclick="goToPizzaPage()">пиццы</button>
-</section>
+
 <script>
     function goToRomePizzaPage() {
         window.location.href = "romePizza.html";
